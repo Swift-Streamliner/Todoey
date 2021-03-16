@@ -6,7 +6,7 @@
 //  Copyright © 2021 App Brewery. All rights reserved.
 //
 
-class Item {
+class Item : Encodable {
     var title: String = ""
     var done: Bool = false
 }

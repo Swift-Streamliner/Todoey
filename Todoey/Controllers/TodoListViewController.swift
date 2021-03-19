@@ -50,7 +50,9 @@ class TodoListViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+        //itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+        context.delete(itemArray[indexPath.row])
+        itemArray.remove(at: indexPath.row)
         saveItems()
     }
     

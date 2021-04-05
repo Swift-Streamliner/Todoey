@@ -87,8 +87,6 @@ class TodoListViewController: UITableViewController {
             newItem.done = false
             self.itemArray.append(newItem)
             self.saveItems()
-            
-            self.tableView.reloadData()
         }
         alert.addTextField { (alertTextField) in
             alertTextField.placeholder = "Create new item"
